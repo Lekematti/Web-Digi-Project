@@ -1,0 +1,38 @@
+
+/*--------- MAIN MENU ---------------------*/
+
+/*Menu*/
+#main-menu {
+    list-style-type: none;
+    padding: 0px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #C0FDFB;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/*Menu item*/
+#main-menu li {
+    display: block;
+    margin: auto;
+}
+
+/*Link in menu item*/
+#main-menu a {
+    text-decoration: none;
+    padding: 3px;
+    color: #005682;
+    background: #C0FDFB;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 23px;
+
+}
+
+/*Menu item when mouse over*/
+#main-menu a:hover {
+    color: white;
+    background: #C0FDFB;
+}
