@@ -18,14 +18,45 @@ p{
     text-align: center;
     color: #7A8450; /*secondary color #7A8450 */
 }
-#title{
-    color: #2F2504;
-    text-align: left;
-}
+
+
+
+/*yläpalkki*/
 header{
     background: #7A8450;
-    margin: 5px;
-    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
+#title{
+    color: #2F2504;
+    position: absolute;
+    margin: auto;
 
+}
+#main-menu {
+    list-style-type: none;
+    color: #2F2504;
+    font-family: inherit;
+    font-size: 35px;
+    margin: auto;
+    font-weight: bold;
+    position: center;
+}
+a{
+    color: #2F2504;
+}
+#eka-likki{
+    padding: 10px;
+}
+#toka-likki{
+    padding: 10px;
+}
+#kolmas-likki{
+    padding: 10px;
+}
+#main-menu a:hover {
+    color: #D0DDD7;
+    background: #2F2504;
+}
+/*yläpalkki*/
 
