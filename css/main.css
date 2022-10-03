@@ -18,5 +18,12 @@ p{
     text-align: center;
     color: #7A8450; /*secondary color #7A8450 */
 }
+#title{
+    max-width: 25%;
+    background: #7A8450;
+    color: #D0DDD7;
+    text-align: center;
+    margin: auto;
+}
 
 
