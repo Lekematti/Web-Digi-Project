@@ -5,5 +5,18 @@ head{
 
 }
 body{
-
+background: #2F2504; /*primary color*/
 }
+p{
+    color: #D0DDD7; /*text color*/
+}
+.intro-vid{
+    text-align: center;
+}
+
+#intro-text{
+    text-align: center;
+    color: #7A8450; /*secondary color #7A8450 */
+}
+
+
