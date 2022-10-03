@@ -26,6 +26,7 @@ header{
     background: #7A8450;
     display: flex;
     flex-wrap: wrap;
+
 }
 #title{
     color: #2F2504;
@@ -60,3 +61,10 @@ a{
 }
 /*yläpalkki*/
 
+
+
+/*kartta*/
+#map{
+    position: center;
+}
+/*kartta*/
