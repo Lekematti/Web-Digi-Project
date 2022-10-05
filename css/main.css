@@ -4,33 +4,21 @@ html{
 head{
 
 }
-body{
-background: #2F2504; /*primary color*/
-}
-p{
-    color: #D0DDD7; /*text color*/
-}
-.intro-vid{
-    text-align: center;
-}
-
-#intro-text{
-    text-align: center;
-    color: #7A8450; /*secondary color #7A8450 */
-}
-
-
 
 /*yläpalkki*/
-header{
+#ylapalkki{
     background: #7A8450;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
 
 }
 #title{
     color: #2F2504;
-    position: absolute;
     margin: auto;
 
 }
@@ -41,18 +29,19 @@ header{
     font-size: 35px;
     margin: auto;
     font-weight: bold;
-    position: center;
+
 }
 a{
     color: #2F2504;
+
 }
-#eka-likki{
+#eka-linkki{
     padding: 10px;
 }
-#toka-likki{
+#toka-linkki{
     padding: 10px;
 }
-#kolmas-likki{
+#kolmas-linkki{
     padding: 10px;
 }
 #main-menu a:hover {
@@ -63,8 +52,40 @@ a{
 
 
 
+body{
+    margin: auto;
+    position: inherit;
+    background: #2F2504; /*primary color*/
+}
+p{
+    color: #D0DDD7; /*text color*/
+    text-align: center;
+}
+.intro-vid{
+    text-align: center;
+    position: center;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+}
+#intro-text{
+    text-align: center;
+    position: relative;
+    top: 50px;
+    color: #7A8450; /*secondary color #7A8450 */
+
+}
+
+
+
 /*kartta*/
 #map{
-    position: center;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 /*kartta*/
