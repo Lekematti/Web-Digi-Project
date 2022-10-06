@@ -52,9 +52,6 @@ a{
 
 
 
-
-
-
 #map{                 /*kartta*/
     width: 500px;
     height: 300px;
@@ -86,7 +83,6 @@ p{
 #intro-text{
     text-align: center;
     position: relative;
-
     color: #7A8450; /*secondary color #7A8450 */
 }
 h2{
@@ -100,12 +96,12 @@ article{
     color: #D0DDD7; /*text color*/
     text-align: center;
 }
-img{
-    text-align: center;
-    position: center;
-    margin: auto;
+.intro-pic{
+    text-align:center;
+    display:block;
+    margin:auto;
+    padding-bottom: 10px;
     width: 500px;
-    height: 281px;
 }
 
 #mpklink{
