@@ -1,36 +1,36 @@
+var map = L.map('map').setView([60.22407, 24.75854], 10);
 
-            // Asetukset paikkatiedon hakua varten (valinnainen)
-            const options = {
-            enableHighAccuracy: true,
-            timeout: 5000,
-            maximumAge: 0
-        };
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
-            // Funktio, joka ajetaan, kun paikkatiedot on haettu
-            function success(pos) {
-            const crd = pos.coords;
+var markerKaramalmi = L.marker([60.22407, 24.75854]).addTo(map);
+var markerMyyrmaki = L.marker([60.26652, 24.85157]).addTo(map);
+var markerMyllypuro = L.marker([60.22358, 25.07794]).addTo(map);
 
-            // Tulostetaan paikkatiedot konsoliin
-            console.log('Your current position is:');
-            console.log(`Latitude : ${crd.latitude}`);
-            console.log(`Longitude: ${crd.longitude}`);
-            console.log(`More or less ${crd.accuracy} meters.`);
+var circle = L.circle([60.22407, 24.75854], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map);
 
-            // Käytetään leaflet.js -kirjastoa näyttämään sijainti kartalla (https://leafletjs.com/)
-            const map = L.map('map').setView([crd.latitude, crd.longitude], 13);
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        }).addTo(map);
+markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Nokia Kampus").openPopup();
+markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Myyrmäen Kampus").openPopup();
+markerMyllypuro.bindPopup("<b>Metropolia Myllypuro</b><br>Myllypuron Kampus").openPopup();
+circle.bindPopup("I am a circle.");
 
-            L.marker([crd.latitude, crd.longitude]).addTo(map)
-            .bindPopup('Olen tässä.')
-            .openPopup();
-        }
+var popup = L.popup()
+    .setLatLng([51.513, -0.09])
+    .setContent("I am a standalone popup.")
+    .openOn(map);
 
-            // Funktio, joka ajetaan, jos paikkatietojen hakemisessa tapahtuu virhe
-            function error(err) {
-            console.warn(`ERROR(${err.code}): ${err.message}`);
-        }
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
 
-            // Käynnistetään paikkatietojen haku
-            navigator.geolocation.getCurrentPosition(success, error, options);
+map.on('click', onMapClick);
