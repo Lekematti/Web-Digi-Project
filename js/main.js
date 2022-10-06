@@ -1,4 +1,4 @@
-var map = L.map('map').setView([60.22407, 24.75854], 10);
+var map = L.map('map').setView([60.22662, 24.92425], 10);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -8,6 +8,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var markerKaramalmi = L.marker([60.22407, 24.75854]).addTo(map);
 var markerMyyrmaki = L.marker([60.26652, 24.85157]).addTo(map);
 var markerMyllypuro = L.marker([60.22358, 25.07794]).addTo(map);
+var markerArabia = L.marker([60.21000, 24.97677]).addTo(map);
 
 var circle = L.circle([60.22407, 24.75854], {
     color: 'red',
@@ -16,15 +17,11 @@ var circle = L.circle([60.22407, 24.75854], {
     radius: 500
 }).addTo(map);
 
-markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Nokia Kampus").openPopup();
-markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Myyrmäen Kampus").openPopup();
-markerMyllypuro.bindPopup("<b>Metropolia Myllypuro</b><br>Myllypuron Kampus").openPopup();
+markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Nokia Kampus");
+markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Myyrmäen Kampus");
+markerMyllypuro.bindPopup("<b>Metropolia Myllypuro</b><br>Myllypuron Kampus");
+markerArabia.bindPopup("<b>Metropolia Arabia</b><br>Arabian Kampus");
 circle.bindPopup("I am a circle.");
-
-var popup = L.popup()
-    .setLatLng([51.513, -0.09])
-    .setContent("I am a standalone popup.")
-    .openOn(map);
 
 function onMapClick(e) {
     popup
