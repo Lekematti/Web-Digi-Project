@@ -93,6 +93,13 @@ article{
     color: #D0DDD7; /*text color*/
     text-align: center;
 }
+img{
+    text-align: center;
+    position: center;
+    margin: auto;
+    width: 500px;
+    height: 281px;
+}
 
 
 
