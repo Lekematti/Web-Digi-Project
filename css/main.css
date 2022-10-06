@@ -1,25 +1,12 @@
-html{
-
-}
-head{
-
-}
-
 /*yläpalkki*/
 #ylapalkki{
     background: #7A8450;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    position: fixed;
+    position: sticky;
     top: 0;
-    right: 0;
     z-index: 9999;
-
-}
-#title{
-    color: #2F2504;
-    margin: auto;
 }
 #main-menu {
     list-style-type: none;
@@ -28,13 +15,12 @@ head{
     font-size: 35px;
     margin: auto;
     font-weight: bold;
-
 }
 a{
     color: #2F2504;
 }
 #tml{
-    position: absolute; left: 10px;
+
 }
 #eka-linkki{
     padding: 10px;
@@ -53,7 +39,7 @@ a{
     font-size: 25px;
 }
 #credits{
-    position: absolute; right: 10px;
+
 }
 #main-menu a:hover {
     color: #D0DDD7;
@@ -61,22 +47,28 @@ a{
 }
 /*yläpalkki*/
 
-/*kartta*/
-#map{
+
+
+
+
+
+
+
+
+#map{                 /*kartta*/
     width: 500px;
     height: 300px;
     margin: auto;
     position: sticky;
     display: flex;
     flex-wrap: wrap;
-
 }
-/*kartta*/
+
+
 
 
 body{
     margin: auto;
-    position: inherit;
     background: #2F2504; /*primary color*/
 }
 p{
@@ -94,9 +86,8 @@ p{
 #intro-text{
     text-align: center;
     position: relative;
-    top: 50px;
-    color: #7A8450; /*secondary color #7A8450 */
 
+    color: #7A8450; /*secondary color #7A8450 */
 }
 h2{
     color: #7A8450;
@@ -113,6 +104,12 @@ img{
     height: 281px;
 }
 
-
-
-
+#mpklink{
+    color: #D0DDD7;
+}
+#osm{
+    color: #D0DDD7;
+}
+#leaf{
+    color: #D0DDD7;
+}
