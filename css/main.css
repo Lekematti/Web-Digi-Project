@@ -20,7 +20,6 @@ head{
 #title{
     color: #2F2504;
     margin: auto;
-
 }
 #main-menu {
     list-style-type: none;
@@ -33,16 +32,28 @@ head{
 }
 a{
     color: #2F2504;
-
+}
+#tml{
+    position: absolute; left: 10px;
 }
 #eka-linkki{
     padding: 10px;
+    font-size: 25px;
 }
 #toka-linkki{
     padding: 10px;
+    font-size: 25px;
 }
 #kolmas-linkki{
     padding: 10px;
+    font-size: 25px;
+}
+#neljäs-linkki{
+    padding: 10px;
+    font-size: 25px;
+}
+#credits{
+    position: absolute; right: 10px;
 }
 #main-menu a:hover {
     color: #D0DDD7;
@@ -71,6 +82,7 @@ body{
 p{
     color: #D0DDD7; /*text color*/
     text-align: center;
+    position: relative;
 }
 .intro-vid{
     text-align: center;
