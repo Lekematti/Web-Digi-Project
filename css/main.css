@@ -88,6 +88,10 @@ p{
 h2{
     color: #7A8450;
 }
+h3{
+    color: #7A8450;
+    text-align: center;
+}
 article{
     color: #D0DDD7; /*text color*/
     text-align: center;
