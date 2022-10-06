@@ -9,22 +9,19 @@ var markerKaramalmi = L.marker([60.22407, 24.75854]).addTo(map);
 var markerMyyrmaki = L.marker([60.26652, 24.85157]).addTo(map);
 var markerMyllypuro = L.marker([60.22358, 25.07794]).addTo(map);
 
-var circle = L.circle([60.22407, 24.75854], {
+/*var circle = L.circle([60.22407, 24.75854], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.5,
     radius: 500
-}).addTo(map);
+}).addTo(map);*/
 
-markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Nokia Kampus").openPopup();
-markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Myyrmäen Kampus").openPopup();
-markerMyllypuro.bindPopup("<b>Metropolia Myllypuro</b><br>Myllypuron Kampus").openPopup();
-circle.bindPopup("I am a circle.");
+//markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Nokia Kampus").openPopup();
+//markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Myyrmäen Kampus").openPopup();
+//markerMyllypuro.bindPopup("<b>Metropolia Myllypuro</b><br>Myllypuron Kampus").openPopup();
+//circle.bindPopup("I am a circle.");
 
-var popup = L.popup()
-    .setLatLng([51.513, -0.09])
-    .setContent("I am a standalone popup.")
-    .openOn(map);
+
 
 function onMapClick(e) {
     popup

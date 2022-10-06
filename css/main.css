@@ -50,6 +50,17 @@ a{
 }
 /*yläpalkki*/
 
+/*kartta*/
+#map{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/*kartta*/
 
 
 body{
@@ -75,17 +86,14 @@ p{
     color: #7A8450; /*secondary color #7A8450 */
 
 }
-
-
-
-/*kartta*/
-#map{
-    width: 500px;
-    height: 300px;
-    margin: auto;
-    position: sticky;
-    display: flex;
-    flex-wrap: wrap;
-
+h2{
+    color: #7A8450;
 }
-/*kartta*/
+article{
+    color: #D0DDD7; /*text color*/
+    text-align: center;
+}
+
+
+
+
