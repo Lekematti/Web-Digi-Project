@@ -15,13 +15,16 @@
     margin: 1em;
     color: white;
     font-family: "Open sans";
+    position: center;
+    margin: auto;
 }
 
 .search {
     display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: inherit;
+    text-align:center;
+    display:block;
+    margin:auto;
 }
 
 button {
