@@ -118,6 +118,9 @@ article{
 #leaf{
     color: #D0DDD7;
 }
+#owm {
+    color: #D0DDD7;
+}
 #map-saa{
     position: sticky;
     display: flex;
