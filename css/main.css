@@ -54,8 +54,8 @@ a{
 
 
 #map{                 /*kartta*/
-    width: 500px;
-    height: 300px;
+    width: 420px;
+    height: 420px;
     margin: auto;
     position: sticky;
     display: flex;
@@ -117,4 +117,10 @@ article{
 }
 #leaf{
     color: #D0DDD7;
+}
+#map-saa{
+    position: sticky;
+    display: flex;
+    flex-wrap: wrap;
+
 }
