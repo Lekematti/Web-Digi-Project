@@ -7,4 +7,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var markerKaramalmi = L.marker([60.22407, 24.75854]).addTo(map);
 
-markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Nokia Kampus");
+markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Karaportti 2, 02610 Espoo");

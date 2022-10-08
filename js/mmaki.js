@@ -7,4 +7,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var markerMyyrmaki = L.marker([60.26652, 24.85157]).addTo(map);
 
-markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Myyrmäen Kampus");
+markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Leiritie 1, 01600 Vantaa");

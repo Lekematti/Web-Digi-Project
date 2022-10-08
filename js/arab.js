@@ -7,4 +7,4 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var markerArabia = L.marker([60.21005, 24.97682]).addTo(map);
 
-markerArabia.bindPopup("<b>Metropolia Arabia</b><br>Arabian Kampus");
+markerArabia.bindPopup("<b>Metropolia Arabia</b><br>Hämeentie 135 D, 00560 Helsinki");

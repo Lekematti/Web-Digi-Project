@@ -7,6 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 9999;
+    font-family: "Open sans";
 }
 #main-menu {
     list-style-type: none;
@@ -72,6 +73,7 @@ p{
     color: #D0DDD7; /*text color*/
     text-align: center;
     position: relative;
+    font-family: "Open sans";
 }
 .intro-vid{
     text-align: center;
@@ -87,10 +89,12 @@ p{
 }
 h2{
     color: #7A8450;
+    font-family: "Open sans";
 }
 h3{
     color: #7A8450;
     text-align: center;
+    font-family: "Open sans";
 }
 article{
     color: #D0DDD7; /*text color*/
@@ -106,6 +110,7 @@ article{
 
 #mpklink{
     color: #D0DDD7;
+    font-family: "Open sans";
 }
 #osm{
     color: #D0DDD7;

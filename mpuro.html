@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-            <title>Myllypuro</title>
-                <link rel="stylesheet" href="css/main.css">
-                    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-                          integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-                          crossorigin=""/>
-                        <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-                                integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-                                crossorigin=""></script>
-    </head>
-    <body>
-        <header id="ylapalkki">
+<head>
+    <meta charset="UTF-8">
+    <title>Myllypuro</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+          integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+            integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+            crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="ylapalkki">
 
-            <nav id="main-menu">
-                <a id="tml" href="index.html">TML</a>
-                    <a id="eka-linkki" href="kmalmi.html">Karamalmi</a>
-                        <a id="toka-linkki" href="mpuro.html">Myllypuro</a>
-                        <a id="kolmas-linkki"href="mmaki.html">Myyrmäki</a>
-                    <a id="neljäs-linkki"href="arab.html">Arabia</a>
-                <a id="credits"href="credits.html">Credits</a>
-            </nav>
-        </header>
+    <nav id="main-menu">
+        <a id="tml" href="index.html">TML</a>
+        <a id="eka-linkki" href="kmalmi.html">Karamalmi</a>
+        <a id="toka-linkki" href="mpuro.html">Myllypuro</a>
+        <a id="kolmas-linkki" href="mmaki.html">Myyrmäki</a>
+        <a id="neljäs-linkki" href="arab.html">Arabia</a>
+        <a id="credits" href="credits.html">Credits</a>
+    </nav>
+</header>
 
-        <h2 id="intro-text">Myllypuron kampus</h2>
-            <div class="intro-pic">
-                <img src="img/mpuro-kampus-small.jpg" alt="Kuva kampuksesta" type="img/jpeg">
-            </div>
+<h2 id="intro-text">Myllypuron kampus</h2>
+<div class="intro-pic">
+    <img src="img/mpuro-kampus-small.jpg" alt="Kuva kampuksesta" type="img/jpeg">
+</div>
 
-            <div id="map"></div>
+<div id="map"></div>
 
-        <div style="margin-top: 50px">
-            <h3>Osoite:</h3>
-            <p>Myllypurontie 1<br>00920 Helsinki</p>
-            <h3>Aukioloajat:</h3>
-            <p>ma - pe  7:30 - 21:00<br>la 10:00 - 17:00</p>
-            <h3>Verkkosivut:</h3>
+<div class="card">
+    <div class="search">
+        <input type="text" class="search-bar" placeholder="Search by city">
+        <button id="hakunappi"> search</button>
+    </div>
+    <div class="weather">
+        <h2 class="city">Weather in Karamalmi</h2>
+        <h1 class="temp"></h1>
+        <div class="flex">
+            <img src="" alt="" class="icon"/>
+            <div class="description"></div>
         </div>
-        <div style="text-align: center; margin-bottom: 100px">
-            <a style="color: #D0DDD7" href="https://www.metropolia.fi/fi/metropoliasta/kampukset/myllypuro">https://www.metropolia.fi/fi/metropoliasta/kampukset/myllypuro</a>
-        </div>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+    </div>
+</div>
 
-        <script src="js/mpuro.js"></script>
-    </body>
+<div style="margin-top: 50px">
+    <h3>Osoite:</h3>
+    <p>Myllypurontie 1<br>00920 Helsinki</p>
+    <h3>Aukioloajat:</h3>
+    <p>ma - pe 7:30 - 21:00<br>la 10:00 - 17:00</p>
+    <h3>Verkkosivut:</h3>
+</div>
+<div style="text-align: center; margin-bottom: 100px">
+    <a style="color: #D0DDD7" href="https://www.metropolia.fi/fi/metropoliasta/kampukset/myllypuro">https://www.metropolia.fi/fi/metropoliasta/kampukset/myllypuro</a>
+</div>
+
+<script src="js/mpuro.js"></script>
+<script src="js/weather.js" onload="myllypuro()"></script>
+</body>
 </html>
