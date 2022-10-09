@@ -1,6 +1,5 @@
-
 /*yläpalkki*/
-#ylapalkki{
+#ylapalkki {
     background: #000000d0;
     width: 100%;
     height: auto;
@@ -11,6 +10,7 @@
     z-index: 9999;
     font-family: "Open sans";
 }
+
 #main-menu {
     list-style-type: none;
     color: #4ECCA3;
@@ -24,54 +24,63 @@
     margin-bottom: 0.2em;
 
 }
-a{
+
+a {
     color: #4ECCA3;
     font-family: "Open sans";
 }
-#eka-linkki{
+
+#eka-linkki {
     grid-row-start: 2;
     padding: 10px;
     font-size: 30px;
 }
-#toka-linkki{
+
+#toka-linkki {
     grid-row-start: 2;
     padding: 10px;
     font-size: 30px;
 }
-#kolmas-linkki{
+
+#kolmas-linkki {
     grid-row-start: 2;
     padding: 10px;
     font-size: 30px;
 }
-#neljäs-linkki{
+
+#neljäs-linkki {
     grid-row-start: 2;
     padding: 10px;
     font-size: 30px;
 }
-#credits{
+
+#credits {
     grid-row-start: 2;
     font-size: 30px;
 }
+
 #main-menu a:hover {
     color: #D0DDD7;
 }
 
-.yla-pic{
+.yla-pic {
     margin: auto;
 }
-#logo{
+
+#logo {
     margin-top: 10px;
     height: 150px;
     border-radius: 30px;
 }
+
 /*yläpalkki*/
 
 
-#link-info{
+#link-info {
     color: #D0DDD7;
 }
 
-#map{                 /*kartta*/
+#map { /*kartta*/
     min-width: 500px;
     min-height: 500px;
     margin-left: auto;
@@ -79,7 +88,8 @@ a{
     flex-wrap: wrap;
     display: flex;
 }
-#paa-map{
+
+#paa-map {
     width: 420px;
     height: 420px;
 
@@ -88,47 +98,50 @@ a{
     display: flex;
 }
 
-body{
+body {
     margin: auto;
     background: #626c66; /*primary color*/
 }
-p{
+
+p {
     color: #D0DDD7; /*text color*/
     text-align: center;
     position: relative;
     font-family: "Open sans";
 }
-.intro-vid{
+
+.intro-vid {
     width: 500px;
     height: 350px;
     position: center;
     display: block;
     text-align: center;
 }
-#intro-text{
+
+#intro-text {
     text-align: center;
     position: relative;
     color: #4ECCA3; /*secondary color #7A8450 */
 }
-h2{
+
+h2 {
     color: #4ECCA3;
     font-family: "Open sans";
 }
-h3{
-    color: #4ECCA3;
-    text-align: center;
-    font-family: "Open sans";
-}
-article{
+
+article {
     color: #D0DDD7; /*text color*/
     text-align: center;
 }
-.intro-pic{
-    text-align:center;
-    display:block;
+
+.intro-pic {
+    text-align: left;
+    display: block;
     margin: auto;
     padding-bottom: 10px;
     width: 500px;
+    position: relative;
+    left: 0;
 }
 
 .grid-container {
@@ -146,15 +159,18 @@ article{
     background-color: #000000d0;
     border-radius: 30px;
 }
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
+
 .flex-item {
     flex: 1;
 }
+
 .flex-item1 {
     flex: 100%;
 }
@@ -164,7 +180,7 @@ figcaption {
     color: #4ECCA3;
 }
 
-#map-saa{
+#map-saa {
     display: flex;
     flex-wrap: wrap;
 }
@@ -179,4 +195,78 @@ figcaption {
     margin-left: auto;
     border-radius: 30px;
     width: 20%;
+
+}
+
+.grid-container-sivu {
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    position: relative;
+    grid-template-areas:
+        "Kampus kampus kampus"
+        "Kuva Desci"
+}
+
+.grid-item-sivu {
+    background-color: #000000d0;
+    border-radius: 30px;
+}
+
+.flex-container-sivu {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+}
+
+.flex-item-sivu {
+
+}
+
+.flex-item-sivu1 {
+    flex: 100%;
+}
+
+.flex-item-sivu2 {
+    margin: 15px;
+
+}
+
+.flex-item-sivu3 {
+    margin: auto;
+    padding-right: 15px;
+
+}
+
+img {
+    border-radius: 30px;
+}
+
+.footer {
+    position: relative;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #000000d0;
+    border-radius: 30px;
+    width: 20%;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+    color: #4ECCA3;
+    font-family: "Open sans";
+}
+
+#footer-link {
+    display: grid;
+    flex-wrap: wrap;
+    margin: auto;
 }

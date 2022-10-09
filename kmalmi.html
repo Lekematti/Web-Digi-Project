@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karamalmi</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/weather.css">
@@ -22,66 +23,60 @@
         <a id="tml" href="index.html"><img id="logo" src="img/metguide.png" type="img/png"></a>
     </div>
     <nav id="main-menu">
-            <a id="eka-linkki" href="kmalmi.html">Karamalmi</a>
-                <a id="toka-linkki" href="mpuro.html">Myllypuro</a>
-                <a id="kolmas-linkki" href="mmaki.html">Myyrmäki</a>
-            <a id="neljäs-linkki" href="arab.html">Arabia</a>
+        <a id="eka-linkki" href="kmalmi.html">Karamalmi</a>
+        <a id="toka-linkki" href="mpuro.html">Myllypuro</a>
+        <a id="kolmas-linkki" href="mmaki.html">Myyrmäki</a>
+        <a id="neljäs-linkki" href="arab.html">Arabia</a>
         <a id="credits" href="credits.html">Credits</a>
     </nav>
 </header>
 
-<div>
-
-    <div id="map-saa">
-        <div class="card" style="display: grid; column-gap: 25px; row-gap: 10px; margin: 5%;">
-            <h2 id="intro-text">Kararamalmin kampus</h2>
-            <div class="intro-pic">
-                <img src="img/kmalmi-kampus-small.jpg" alt="Kuva kampuksesta" type="img/jpeg">
-            </div>
-        </div>
-    </div>
-
-    <div id="map-saa">
-
-        <div class="card" style="display: grid; column-gap: 25px; row-gap: 10px; margin: 5%;">
-            <div class="weather" style="grid-column: 1; grid-row: 1;">
-                <h2 class="city">Weather in Karamalmi</h2>
-                <h1 class="temp"></h1>
-                <div class="flex">
-                    <img src="" alt="" class="icon"/>
-                    <div class="description"></div>
-                </div>
-                <div class="humidity"></div>
-                <div class="wind"></div>
-            </div>
-
-            <iframe style="grid-column: 1; grid-row: 2; border-radius: 20px; width: 100%; min-width: 360px; height: 240px"
-                    src="https://reittiopas.hsl.fi/haku?&lang=fi&address2=Karaportti 2, Espoo&lon2=24.758061&lat2=60.223876"
-                    title="Digitransit UI embedded search" scrolling="no"></iframe>
-
-            <div id="map" style="grid-column: 2/span 5; grid-row: 1/span 2; width: 100%; height: 100%; border-radius: 20px;"></div>
-
-        </div>
-
-    </div>
-    <p>
-        Tutkinto-ohjelmat Karamalmin kampuksella: Tieto- ja viestintätekniikka sekä tuotantotalous
-        <a id="link-info" href="https://www.metropolia.fi/fi/metropoliasta/kampukset/myllypuro">Löydät karamalmen tutkinto-ohlemat täältä</a>
-    </p>
-
-    <div style="margin-top: 50px">
-        <h3>Osoite:</h3>
-        <p>Karaportti 2<br>02610 Espoo</p>
-        <h3>Aukioloajat:</h3>
-        <p>ma - pe 7:30 - 21:00</p>
-        <h3>Verkkosivut:</h3>
-    </div>
-    <div style="text-align: center; margin-bottom: 100px">
-        <a style="color: #D0DDD7" href="https://www.metropolia.fi/fi/metropoliasta/kampukset/karamalmi">https://www.metropolia.fi/fi/metropoliasta/kampukset/karamalmi</a>
+<div class="grid-container-sivu">
+    <div class="grid-item-sivu flex-container-sivu">
+        <div class="flex-item-sivu flex-item-sivu1"><h2>Karamalmin kampus</h2></div>
+        <div class="flex-item-sivu flex-item-sivu2"><img src="img/kmalmi-kampus-small.jpg"></div>
+        <div class="flex-item-sivu flex-item-sivu3"><p>Tutkinto-ohjelmat Karamalmin kampuksella: Tieto- ja
+            viestintätekniikka sekä tuotantotalous <br>
+            <a id="link-info" href="https://www.metropolia.fi/fi/metropoliasta/kampukset/karamalmi">Löydät karamalmen
+                tutkinto-ohlemat täältä</a></p></div>
     </div>
 </div>
 
+<div id="map-saa">
 
+    <div class="card" style="display: grid; column-gap: 25px; row-gap: 10px; margin: 5%;">
+        <div class="weather" style="grid-column: 1; grid-row: 1;">
+            <h2 class="city">Weather in Karamalmi</h2>
+            <h1 class="temp"></h1>
+            <div class="flex">
+                <img src="" alt="" class="icon"/>
+                <div class="description"></div>
+            </div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+        </div>
+
+        <iframe style="grid-column: 1; grid-row: 2; border-radius: 20px; width: 100%; min-width: 360px; height: 240px"
+                src="https://reittiopas.hsl.fi/haku?&lang=fi&address2=Karaportti 2, Espoo&lon2=24.758061&lat2=60.223876"
+                title="Digitransit UI embedded search" scrolling="no"></iframe>
+
+        <div id="map"
+             style="grid-column: 2/span 5; grid-row: 1/span 2; width: 100%; height: 100%; border-radius: 20px;"></div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <h3>Osoite:</h3>
+    <p>Karaportti 2<br>02610 Espoo</p>
+    <h3>Aukioloajat:</h3>
+    <p>ma - pe 7:30 - 21:00</p>
+    <div>
+        <h3>Verkkosivut:</h3>
+        <a id="footer-link" href="https://www.metropolia.fi/fi/metropoliasta/kampukset/karamalmi">https://www.metropolia.fi/fi/metropoliasta/kampukset/karamalmi</a>
+    </div>
+</div>
 
 <script src="js/kmalmi.js"></script>
 <script src="js/weather.js" onload="karamalmi()"></script>
