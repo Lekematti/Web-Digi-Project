@@ -108,6 +108,45 @@ article{
     width: 500px;
 }
 
+.grid-container {
+    background: #000000d0;
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 2em;
+    border-radius: 30px;
+    margin: 10%;
+}
+
+.grid-item-1 {
+    grid-column: span 3;
+}
+.grid-item-2 {
+    grid-row-start: 2;
+}
+.grid-item-3 {
+    grid-row-start: 2;
+}
+.grid-item-4 {
+    grid-row-start: 2;
+}
+
+#eetukuva {
+    border-radius: 50%;
+}
+#eetukuva2 {
+    border-radius: 50%;
+}
+#eetukuva3 {
+    border-radius: 50%;
+}
+
+figcaption {
+    font-family: "Open sans";
+    color: #7A8450;
+}
+
 #mpklink{
     color: #D0DDD7;
     font-family: "Open sans";
