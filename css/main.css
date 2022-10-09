@@ -26,6 +26,7 @@
 }
 a{
     color: #4ECCA3;
+    font-family: "Open sans";
 }
 #eka-linkki{
     grid-row-start: 2;
@@ -132,7 +133,6 @@ article{
 
 .grid-container {
     margin: 10%;
-
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -159,55 +159,24 @@ article{
     flex: 100%;
 }
 
-.grid-item-1 {
-    grid-column: span 3;
-    flex-direction: column;
-    position: relative;
-}
-.grid-item-2 {
-    grid-row-start: 2;
-    position: relative;
-}
-.grid-item-3 {
-    grid-row-start: 2;
-    position: relative;
-}
-.grid-item-4 {
-    grid-row-start: 2;
-    position: relative;
-}
-.kuvaPlug {
-
-}
-
-#eetukuva {
-    border-radius: 50%;
-}
-#eetukuva2 {
-    border-radius: 50%;
-}
-#eetukuva3 {
-    border-radius: 50%;
-}
-
 figcaption {
     font-family: "Open sans";
     color: #4ECCA3;
 }
 
-#mpklink{
-    color: #D0DDD7;
-    font-family: "Open sans";
-}
-#osm{
-    color: #D0DDD7;
-}
-#leaf{
-    color: #D0DDD7;
-}
-
 #map-saa{
     display: flex;
     flex-wrap: wrap;
+}
 
+.credits {
+    background: #000000d0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 30px;
+    width: 20%;
 }
