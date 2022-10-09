@@ -131,27 +131,53 @@ article{
 }
 
 .grid-container {
-    background: #000000d0;
-    display: grid;
-    grid-gap: 20px;
-    justify-items: center;
-    align-items: center;
-    padding: 2em;
-    border-radius: 30px;
     margin: 10%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "Tekijät Tekijät Tekijät"
+        "Leo Eetu Aapeli"
+}
+
+.grid-item {
+    background-color: #000000d0;
+    border-radius: 30px;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.flex-item {
+    flex: 1;
+}
+.flex-item1 {
+    flex: 100%;
 }
 
 .grid-item-1 {
     grid-column: span 3;
+    flex-direction: column;
+    position: relative;
 }
 .grid-item-2 {
     grid-row-start: 2;
+    position: relative;
 }
 .grid-item-3 {
     grid-row-start: 2;
+    position: relative;
 }
 .grid-item-4 {
     grid-row-start: 2;
+    position: relative;
+}
+.kuvaPlug {
+
 }
 
 #eetukuva {
