@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>The Metropolia locator</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/weather.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
           integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
           crossorigin=""/>
@@ -28,133 +29,49 @@
     </nav>
 </header>
 
-<h2 id="intro-text">Introduction video</h2>
-<div class="intro-vid">
-    <video controls width="500" height="350">
-        <source src="videos/The-Maanantai-small.mp4" type="video/mp4">
-    </video>
+<div>
+    <div id="map-saa">
+        <div class="card" style="display: grid; column-gap: 25px; row-gap: 10px; margin: 5%;">
+            <div class="intro-vid" style="grid-column: 1; grid-row: 1; width: 500px">
+                <video controls width="500" height="350">
+                    <source src="videos/The-Maanantai-small.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div style="grid-column: 2/span 20; grid-row: 1;">
+                <p style="float: left">Hienoa tekstiä!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="map-saa">
+
+        <div class="card" style="display: grid; column-gap: 25px; row-gap: 10px; margin: 5%;">
+            <div class="search" style="grid-column: 1; grid-row: 1">
+                <input type="text" class="search-bar" placeholder="Search by city">
+                <button id="hakunappi"> search</button>
+            </div>
+            <div class="weather" style="grid-column: 1; grid-row: 2;">
+                <h2 class="city">Weather in Karamalmi</h2>
+                <h1 class="temp"></h1>
+                <div class="flex">
+                    <img src="" alt="" class="icon"/>
+                    <div class="description"></div>
+                </div>
+                <div class="humidity"></div>
+                <div class="wind"></div>
+            </div>
+
+            <iframe style="grid-column: 1; grid-row: 3; border-radius: 20px; width: 100%; min-width: 360px; height: 240px"
+                    src="https://reittiopas.hsl.fi/haku?&lang=fi&address2=&lon2=24.758061&lat2=60.223876"
+                    title="Digitransit UI embedded search" scrolling="no"></iframe>
+
+            <div id="map" style="grid-column: 2/span 5; grid-row: 1/span 3; width: 100%; height: 100%; border-radius: 20px;"></div>
+
+        </div>
+    </div>
 </div>
 
-<div id="map"></div>
-
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-<br>
-<br>
-<p>Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.Hienoa testi tekstiä.Hienoa testi tekstiä.
-    Hienoa testi tekstiä.</p>
-
-
 <script src="js/main.js"></script>
+<script src="js/weather.js" onload="helsinki()"></script>
 </body>
-
 </html>

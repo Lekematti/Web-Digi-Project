@@ -47,10 +47,13 @@ function myyrmaki () {
 }
 // Hakee Arábian sään. EI HELSINGIN ARABIAN.
 function arabia () {
-    weather.fetchWeather("Arabia");
+    weather.fetchWeather("Arabianranta");
 }
 function myllypuro () {
     weather.fetchWeather("Myllypuro");
+}
+function helsinki () {
+    weather.fetchWeather("Helsinki");
 }
 
 // Hakee kyseisen kaupungin säätiedot oletuksena kun sivun lataa.
