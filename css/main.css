@@ -1,73 +1,95 @@
+
 /*yläpalkki*/
 #ylapalkki{
-    background: #7A8450;
+    background: #000000d0;
     width: 100%;
-    display: flex;
+    height: auto;
+    display: grid;
     flex-wrap: wrap;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 9999;
     font-family: "Open sans";
 }
 #main-menu {
     list-style-type: none;
-    color: #2F2504;
+    color: #4ECCA3;
     font-family: inherit;
     font-size: 35px;
     margin: auto;
     font-weight: bold;
+    border-radius: 30px;
+    padding-left: 0.2em;
+    padding-right: 0.4em;
+    margin-bottom: 0.2em;
+
 }
 a{
-    color: #2F2504;
-}
-#tml{
-
+    color: #4ECCA3;
 }
 #eka-linkki{
+    grid-row-start: 2;
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
 #toka-linkki{
+    grid-row-start: 2;
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
 #kolmas-linkki{
+    grid-row-start: 2;
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
 #neljäs-linkki{
+    grid-row-start: 2;
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
 }
 #credits{
-
+    grid-row-start: 2;
+    font-size: 30px;
 }
 #main-menu a:hover {
     color: #D0DDD7;
-    background: #2F2504;
+}
+
+.yla-pic{
+    margin: auto;
+}
+#logo{
+    margin-top: 10px;
+    height: 150px;
+    border-radius: 30px;
 }
 /*yläpalkki*/
 
 
-
-
-
+#link-info{
+    color: #D0DDD7;
+}
 
 #map{                 /*kartta*/
     min-width: 500px;
     min-height: 500px;
-    margin: auto;
+    margin-left: auto;
     position: sticky;
-    display: flex;
     flex-wrap: wrap;
+    display: flex;
 }
+#paa-map{
+    width: 420px;
+    height: 420px;
 
-
-
+    position: sticky;
+    flex-wrap: wrap;
+    display: flex;
+}
 
 body{
     margin: auto;
-    background: #2F2504; /*primary color*/
+    background: #626c66; /*primary color*/
 }
 p{
     color: #D0DDD7; /*text color*/
@@ -85,14 +107,14 @@ p{
 #intro-text{
     text-align: center;
     position: relative;
-    color: #7A8450; /*secondary color #7A8450 */
+    color: #4ECCA3; /*secondary color #7A8450 */
 }
 h2{
-    color: #7A8450;
+    color: #4ECCA3;
     font-family: "Open sans";
 }
 h3{
-    color: #7A8450;
+    color: #4ECCA3;
     text-align: center;
     font-family: "Open sans";
 }
@@ -144,7 +166,7 @@ article{
 
 figcaption {
     font-family: "Open sans";
-    color: #7A8450;
+    color: #4ECCA3;
 }
 
 #mpklink{
@@ -159,7 +181,6 @@ figcaption {
 }
 
 #map-saa{
-    position: sticky;
     display: flex;
     flex-wrap: wrap;
 
