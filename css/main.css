@@ -81,7 +81,7 @@ a {
 }
 
 #map { /*kartta*/
-    min-width: 500px;
+    min-width: 100px;
     min-height: 500px;
     margin-left: auto;
     position: sticky;
@@ -117,6 +117,7 @@ ul{
     font-family: "Open sans";
     font-size: 20px;
 }
+
 #intro-text {
     text-align: center;
     position: relative;
@@ -141,6 +142,20 @@ article {
     width: 500px;
     position: relative;
     left: 0;
+}
+
+#tietoDiv {
+    background: #000000d0;
+    border-radius: 30px;
+    margin: auto;
+    width: 50%;
+    height: 250px;
+    margin-top: 3%;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .grid-container {
@@ -193,38 +208,11 @@ figcaption {
     margin-right: auto;
     margin-left: auto;
     border-radius: 30px;
-    width: 20%;
+    min-width: 100px;
+    max-width: 800px;
+    margin-left: 25%;
+    margin-right: 25%;
 
-}
-
-
-.grid-item-teksti {
-    border-radius: 30px;
-}
-
-.grid-container-teksti {
-    width: 60%;
-    margin: auto;
-    display: flex;
-
-}
-.flex-container-teksti {
-    flex-wrap: wrap;
-    text-align: center;
-    margin: auto;
-}
-
-.flex-item-teksti1 {
-    flex: 100%;
-}
-.flex-item-teksti2 {
-    flex: 100%;
-}
-.flex-item-teksti3 {
-    flex: 100%;
-}
-.flex-item-teksti4 {
-    flex: 100%;
 }
 
 .footer {
@@ -233,10 +221,13 @@ figcaption {
     text-align: center;
     background: #000000d0;
     border-radius: 30px;
-    width: auto;
+    min-width: 100px;
+    max-width: 800px;
     margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 25%;
+    margin-left: 30%;
+    height: 285px;
+    justify-content: center;
 }
 
 h3 {
@@ -253,10 +244,20 @@ ul{
     padding: 0;
 }
 
+#footerDiv {
+    min-width: 100px;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+}
+
 #footer-link {
     display: grid;
     flex-wrap: wrap;
     margin: auto;
+    min-width: 100px;
+    max-width: 800px;
+
 }
 
 /*Intro vid*/
