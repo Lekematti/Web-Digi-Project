@@ -144,6 +144,20 @@ article {
     left: 0;
 }
 
+#tietoDiv {
+    background: #000000d0;
+    border-radius: 30px;
+    margin: auto;
+    width: 50%;
+    height: 250px;
+    margin-top: 3%;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
 .grid-container {
     margin: 10%;
     display: grid;
