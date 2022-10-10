@@ -108,20 +108,19 @@ p {
     text-align: center;
     position: relative;
     font-family: "Open sans";
+    font-size: 20px;
 }
-
-.intro-vid {
-    width: 500px;
-    height: 350px;
-    position: center;
-    display: block;
+ul{
+    color: #D0DDD7; /*text color*/
     text-align: center;
+    position: relative;
+    font-family: "Open sans";
+    font-size: 20px;
 }
-
 #intro-text {
     text-align: center;
     position: relative;
-    color: #4ECCA3; /*secondary color #7A8450 */
+    color: #D0DDD7; /*secondary color #7A8450 */
 }
 
 h2 {
@@ -198,55 +197,34 @@ figcaption {
 
 }
 
-.grid-container-sivu {
-    margin-top: 4%;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
-    position: relative;
-    grid-template-areas:
-        "Kampus kampus kampus"
-        "Kuva Desci"
-}
 
-.grid-item-sivu {
-    background-color: #000000d0;
+.grid-item-teksti {
     border-radius: 30px;
 }
 
-.flex-container-sivu {
+.grid-container-teksti {
+    width: 60%;
+    margin: auto;
     display: flex;
+
+}
+.flex-container-teksti {
     flex-wrap: wrap;
     text-align: center;
     margin: auto;
 }
 
-.flex-item-sivu {
-
-}
-
-.flex-item-sivu1 {
+.flex-item-teksti1 {
     flex: 100%;
 }
-
-.flex-item-sivu2 {
-    margin: 15px;
-
+.flex-item-teksti2 {
+    flex: 100%;
 }
-
-.flex-item-sivu3 {
-    margin: auto;
-    padding-right: 15px;
-
+.flex-item-teksti3 {
+    flex: 100%;
 }
-
-img {
-    border-radius: 30px;
-    width: 400px;
-    height: 255px;
+.flex-item-teksti4 {
+    flex: 100%;
 }
 
 .footer {
@@ -266,9 +244,86 @@ h3 {
     color: #4ECCA3;
     font-family: "Open sans";
 }
+strong{
+
+}
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
 
 #footer-link {
     display: grid;
     flex-wrap: wrap;
     margin: auto;
 }
+
+/*Intro vid*/
+.div-vid-container{
+    width: 850px;
+    height: 470px;
+    background-color: #000000d0;
+    border-radius: 30px;
+    margin: 50px auto auto auto;
+    display: flex;
+    align-items: center;
+
+}
+.div-vid{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#intro-vid{
+    border-radius: 30px;
+    position: center;
+
+}
+/*intro vid*/
+
+
+/*Info page*/
+.info-container{
+    background-color: #000000d0;
+    background-size: contain;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px auto;
+    width: 80%;
+    min-width: 480px;
+    max-width: 1280px;
+    position: relative;
+}
+.info-pic{
+    float: left;
+    margin: 100px auto auto 50px;
+    text-align: center;
+    font-size: 35px;
+}
+#kampus-pic{
+    border-radius: 30px;
+    position: center;
+    margin: 10px 20px 100px 40px;
+}
+
+#info-p{
+    font-size: 30px;
+    color: #4ECCA3;
+}
+.info-list{
+    float: right;
+    position: center;
+    margin: 30px auto 30px;
+    font-size: 30px;
+    text-align: center;
+}
+#link-info{
+    font-size: 15px;
+    text-align: center;
+}
+/*info page*/
+
+
+
