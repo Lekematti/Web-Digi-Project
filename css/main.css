@@ -81,7 +81,7 @@ a {
 }
 
 #map { /*kartta*/
-    min-width: 500px;
+    min-width: 100px;
     min-height: 500px;
     margin-left: auto;
     position: sticky;
@@ -194,7 +194,10 @@ figcaption {
     margin-right: auto;
     margin-left: auto;
     border-radius: 30px;
-    width: 20%;
+    min-width: 100px;
+    max-width: 800px;
+    margin-left: 25%;
+    margin-right: 25%;
 
 }
 
@@ -222,6 +225,14 @@ figcaption {
     flex-wrap: wrap;
     text-align: center;
     margin: auto;
+    justify-content: center;
+    min-width: 550px;
+    max-width: 800px;
+}
+
+#karamalmiKuva {
+   /* min-width: 200px;
+    max-width: 800px; */
 }
 
 .flex-item-sivu {
@@ -245,8 +256,6 @@ figcaption {
 
 img {
     border-radius: 30px;
-    width: 400px;
-    height: 255px;
 }
 
 .footer {
@@ -255,10 +264,13 @@ img {
     text-align: center;
     background: #000000d0;
     border-radius: 30px;
-    width: auto;
+    min-width: 100px;
+    max-width: 800px;
     margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 25%;
+    margin-left: 30%;
+    height: 285px;
+    justify-content: center;
 }
 
 h3 {
@@ -267,8 +279,18 @@ h3 {
     font-family: "Open sans";
 }
 
+#footerDiv {
+    min-width: 100px;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+}
+
 #footer-link {
     display: grid;
     flex-wrap: wrap;
     margin: auto;
+    min-width: 100px;
+    max-width: 800px;
+
 }
