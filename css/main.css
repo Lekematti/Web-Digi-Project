@@ -81,7 +81,7 @@ a {
 }
 
 #map { /*kartta*/
-    min-width: 100px;
+    min-width: 400px;
     min-height: 500px;
     margin-left: auto;
     position: sticky;
@@ -127,6 +127,7 @@ ul{
 h2 {
     color: #4ECCA3;
     font-family: "Open sans";
+    margin: 3%;
 }
 
 article {
@@ -149,7 +150,8 @@ article {
     border-radius: 30px;
     margin: auto;
     width: 50%;
-    height: 250px;
+    min-width: 400px;
+    height: auto;
     margin-top: 3%;
     margin-bottom: auto;
     display: flex;
@@ -159,7 +161,7 @@ article {
 }
 
 .grid-container {
-    margin: 10%;
+    margin: 90px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -192,6 +194,7 @@ article {
 figcaption {
     font-family: "Open sans";
     color: #4ECCA3;
+    font-weight: bold;
 }
 
 #map-saa {
@@ -257,7 +260,6 @@ ul{
     margin: auto;
     min-width: 100px;
     max-width: 800px;
-
 }
 
 /*Intro vid*/
