@@ -14,11 +14,10 @@ var markerMyllypuro = L.marker([60.22358, 25.07794]).addTo(map);
 var markerArabia = L.marker([60.21005, 24.97682]).addTo(map);
 
 // Markkereiden popupit ja sisältö kun markkereita painetaan.
-markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Nokia Kampus");
-markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Myyrmäen Kampus");
-markerMyllypuro.bindPopup("<b>Metropolia Myllypuro</b><br>Myllypuron Kampus");
-markerArabia.bindPopup("<b>Metropolia Arabia</b><br>Arabian Kampus");
-circle.bindPopup("I am a circle.");
+markerKaramalmi.bindPopup("<b>Metropolia Karamalmi</b><br>Karaportti 2, 02610 Espoo");
+markerMyyrmaki.bindPopup("<b>Metropolia Myyrmäki</b><br>Leiritie 1, 01600 Vantaa");
+markerMyllypuro.bindPopup("<b>Metropolia Myllypuro</b><br>Myllypurontie 1, 00920 Helsinki");
+markerArabia.bindPopup("<b>Metropolia Arabia</b><br>Hämeentie 135 D, 00560 Helsinki");
 
 // Funktio mapin klikkauksesta. Ei ehkä toimi? Turha?
 function onMapClick(e) {

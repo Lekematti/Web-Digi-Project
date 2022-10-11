@@ -328,8 +328,27 @@ h3 {
     text-align: center;
     color: #4ECCA3;
     font-family: "Open sans";
+
 }
 
 /* TURHA ? ? ? ? */
 strong{
+}
+/* Taustatyö-osion container. */
+.taustatyo-container {
+    background: #000000d0;
+    border-radius: 30px;
+    margin: 90px auto;
+    width: 50%;
+    min-width: 400px;
+    max-width: 850px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+/* Itse taustatyö -div. */
+.taustatyo {
+    margin: auto 30px auto 30px;
 }
