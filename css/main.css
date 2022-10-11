@@ -149,7 +149,8 @@ article {
     border-radius: 30px;
     margin: auto;
     width: 50%;
-    height: 250px;
+    min-width: 400px;
+    height: auto;
     margin-top: 3%;
     margin-bottom: auto;
     display: flex;
@@ -198,24 +199,21 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
 }
-
-.credits {
-    background: #000000d0;
+.credits{
+    background-color: #000000d0;
+    background-size: contain;
+    border-radius: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 30px;
-    min-width: 100px;
+    margin: 90px auto;
+    width: 80%;
+    min-width: 200px;
     max-width: 800px;
-    margin-left: 25%;
-    margin-right: 25%;
-
+    position: relative;
 }
 
 .footer {
+    background-size: contain;
     position: relative;
     flex-wrap: wrap;
     text-align: center;
@@ -223,11 +221,30 @@ figcaption {
     border-radius: 30px;
     min-width: 100px;
     max-width: 800px;
-    margin-bottom: 15px;
-    margin-right: 25%;
-    margin-left: 30%;
     height: 285px;
-    justify-content: center;
+    position: center;
+    margin: 30px auto 30px;
+    text-align: center;
+
+
+}
+.footer-mpuro{
+    position: relative;
+    flex-wrap: wrap;
+    text-align: center;
+    background: #000000d0;
+    border-radius: 30px;
+    min-width: 100px;
+    max-width: 800px;
+    height: 320px;
+    position: center;
+    margin: 30px auto 30px;
+    text-align: center;
+}
+#links{
+    text-align: center;
+    align-items: center;
+    margin: auto;
 }
 
 h3 {
@@ -306,7 +323,7 @@ ul{
 #kampus-pic{
     border-radius: 30px;
     position: center;
-    margin: 10px 20px 100px 40px;
+    margin: 10px 20px 100px 0px;
 }
 
 #info-p{
