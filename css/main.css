@@ -1,109 +1,8 @@
-/*yläpalkki*/
-#ylapalkki {
-    background: #000000d0;
-    width: 100%;
-    height: auto;
-    display: grid;
-    flex-wrap: wrap;
-    position: relative;
-    top: 0;
-    z-index: 9999;
-    font-family: "Open sans";
-}
-
-#main-menu {
-    list-style-type: none;
-    color: #4ECCA3;
-    font-family: inherit;
-    font-size: 35px;
-    margin: auto;
-    font-weight: bold;
-    border-radius: 30px;
-    padding-left: 0.2em;
-    padding-right: 0.4em;
-    margin-bottom: 0.2em;
-
-}
-
-a {
-    color: #4ECCA3;
-    font-family: "Open sans";
-    font-size: 20px;
-}
-
-#eka-linkki {
-    grid-row-start: 2;
-    padding: 10px;
-    font-size: 30px;
-}
-
-#toka-linkki {
-    grid-row-start: 2;
-    padding: 10px;
-    font-size: 30px;
-}
-
-#kolmas-linkki {
-    grid-row-start: 2;
-    padding: 10px;
-    font-size: 30px;
-}
-
-#neljäs-linkki {
-    grid-row-start: 2;
-    padding: 10px;
-    font-size: 30px;
-}
-
-#credits {
-    grid-row-start: 2;
-    font-size: 30px;
-}
-
-#main-menu a:hover {
-    color: #D0DDD7;
-}
-
-.yla-pic {
-    margin: auto;
-}
-
-#logo {
-    margin-top: 10px;
-    height: 150px;
-    border-radius: 30px;
-}
-
-/*yläpalkki*/
-
-
-#link-info {
-    color: #D0DDD7;
-}
-
-#map { /*kartta*/
-    min-width: 400px;
-    min-height: 500px;
-    margin-left: auto;
-    position: sticky;
-    flex-wrap: wrap;
-    display: flex;
-}
-
-#paa-map {
-    width: 420px;
-    height: 420px;
-
-    position: sticky;
-    flex-wrap: wrap;
-    display: flex;
-}
-
+/* Body */
 body {
     margin: auto;
     background: #626c66; /*primary color*/
 }
-
 p {
     color: #D0DDD7; /*text color*/
     text-align: center;
@@ -117,169 +16,92 @@ ul{
     position: relative;
     font-family: "Open sans";
     font-size: 20px;
+    list-style: none;
+    padding: 0;
 }
-
-#intro-text {
-    text-align: center;
-    position: relative;
-    color: #D0DDD7; /*secondary color #7A8450 */
-}
-
 h2 {
     color: #4ECCA3;
     font-family: "Open sans";
     margin: 3%;
 }
-
-article {
-    color: #D0DDD7; /*text color*/
-    text-align: center;
+/* Linkit. */
+a {
+    color: #4ECCA3;
+    font-family: "Open sans";
+    font-size: 20px;
 }
 
-.intro-pic {
-    text-align: left;
-    display: block;
-    margin: auto;
-    padding-bottom: 10px;
-    width: 500px;
-    position: relative;
-    left: 0;
-}
-
-#tietoDiv {
+/*yläpalkki*/
+#ylapalkki {
     background: #000000d0;
-    border-radius: 30px;
-    margin: auto;
-    width: 50%;
-    min-width: 400px;
+    width: 100%;
     height: auto;
-    margin-top: 3%;
-    margin-bottom: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.grid-container {
-    margin: 90px;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px;
-    grid-template-areas:
-        "Tekijät Tekijät Tekijät"
-        "Leo Eetu Aapeli"
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    z-index: 9999;
+    font-family: "Open sans";
 }
-
-.grid-item {
-    background-color: #000000d0;
+/* Metguide -logon div. */
+.yla-pic {
+    margin: auto;
+}
+/* Metguide -logo itsessään. */
+#logo {
+    margin-top: 10px;
+    height: 150px;
     border-radius: 30px;
 }
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.flex-item {
-    flex: 1;
-}
-
-.flex-item1 {
-    flex: 100%;
-}
-
-figcaption {
-    font-family: "Open sans";
+/* nav, kampukset. */
+#main-menu {
+    list-style-type: none;
     color: #4ECCA3;
+    font-family: inherit;
+    font-size: 35px;
+    margin: auto;
     font-weight: bold;
-}
-
-#map-saa {
-    display: flex;
-    flex-wrap: wrap;
-}
-.credits{
-    background-color: #000000d0;
-    background-size: contain;
     border-radius: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 90px auto;
-    width: 80%;
-    min-width: 200px;
-    max-width: 800px;
-    position: relative;
-}
-
-.footer {
-    background-size: contain;
-    position: relative;
-    flex-wrap: wrap;
-    text-align: center;
-    background: #000000d0;
-    border-radius: 30px;
-    min-width: 200px;
-    max-width: 800px;
-    height: 285px;
-    position: center;
-    margin: 30px auto 30px;
-    text-align: center;
-
+    padding-left: 0.2em;
+    padding-right: 0.4em;
+    margin-bottom: 0.2em;
 
 }
-.footer-mpuro{
-    position: relative;
-    flex-wrap: wrap;
-    text-align: center;
-    background: #000000d0;
-    border-radius: 30px;
-    min-width: 200px;
-    max-width: 800px;
-    height: 320px;
-    position: center;
-    margin: 30px auto 30px;
-    text-align: center;
+/* Karamalmi. */
+#eka-linkki {
+    grid-row-start: 2;
+    padding: 10px;
+    font-size: 30px;
 }
-#links{
-    text-align: center;
-    align-items: center;
-    margin: auto;
+/* Myllypuro. */
+#toka-linkki {
+    grid-row-start: 2;
+    padding: 10px;
+    font-size: 30px;
 }
-
-h3 {
-    text-align: center;
-    color: #4ECCA3;
-    font-family: "Open sans";
+/* Myyrmäki. */
+#kolmas-linkki {
+    grid-row-start: 2;
+    padding: 10px;
+    font-size: 30px;
 }
-strong{
-
+/* Arabia. */
+#neljäs-linkki {
+    grid-row-start: 2;
+    padding: 10px;
+    font-size: 30px;
 }
-ul{
-    list-style: none;
-    text-align: center;
-    padding: 0;
+/* Credits. */
+#credits {
+    grid-row-start: 2;
+    font-size: 30px;
 }
-
-#footerDiv {
-    min-width: 100px;
-    max-width: 800px;
-    justify-content: center;
-    text-align: center;
+/* Kampus-linkkien hover. */
+#main-menu a:hover {
+    color: #D0DDD7;
 }
 
-#footer-link {
-    display: grid;
-    flex-wrap: wrap;
-    margin: auto;
-    min-width: 100px;
-    max-width: 800px;
-}
-
-/*Intro vid*/
+/* Metguide videon divin container. */
 .div-vid-container{
     width: 850px;
     height: 470px;
@@ -288,22 +110,40 @@ ul{
     margin: 50px auto auto auto;
     display: flex;
     align-items: center;
-
 }
+/* Metguide videon div. */
 .div-vid{
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
+/* Metguide video itsessään. */
 #intro-vid{
     border-radius: 30px;
     position: center;
-
 }
-/*intro vid*/
 
+/* TURHA ? ? ? ? ? */
+#link-info {
+    color: #D0DDD7;
+}
 
-/*Info page*/
+/* Kartta. */
+#map {
+    min-width: 400px;
+    min-height: 500px;
+    margin-left: auto;
+    position: sticky;
+    flex-wrap: wrap;
+    display: flex;
+}
+/* sää-kartta-reittiopas div. */
+#map-saa {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Kampusinfo container. */
 .info-container{
     background-color: #000000d0;
     background-size: contain;
@@ -316,22 +156,25 @@ ul{
     max-width: 1280px;
     position: relative;
 }
+/* Kampusinfon kuvan div. */
 .info-pic{
     float: left;
     margin: 100px auto auto 50px;
     text-align: center;
     font-size: 35px;
 }
+/* Kampusinfon kuva. */
 #kampus-pic{
     border-radius: 30px;
     position: center;
     margin: 10px 20px 100px 0px;
 }
-
+/* Kampusinfon info -paragraafi. */
 #info-p{
     font-size: 30px;
     color: #4ECCA3;
 }
+/* Kampusinfon unordered listan div. */
 .info-list{
     float: right;
     position: center;
@@ -339,11 +182,154 @@ ul{
     font-size: 30px;
     text-align: center;
 }
+/* TURHA ? ? ? ? ? */
 #link-info{
     font-size: 15px;
     text-align: center;
 }
-/*info page*/
 
+/* Kampus-sivujen footerit */
+.footer {
+    flex-wrap: wrap;
+    text-align: center;
+    background: #000000d0;
+    border-radius: 30px;
+    min-width: 200px;
+    max-width: 800px;
+    height: 285px;
+    margin: 30px auto 30px;
+}
+/* Myllypuron footer */
+.footer-mpuro{
+    flex-wrap: wrap;
+    text-align: center;
+    background: #000000d0;
+    border-radius: 30px;
+    min-width: 200px;
+    max-width: 800px;
+    height: 320px;
+    margin: 30px auto 30px;
+}
+/* Footereiden Verkkosivu-linkkien div.  */
+#footerDiv {
+    min-width: 100px;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center;
+}
+/* Verkkosivu-linkki */
+#footer-link {
+    display: grid;
+    flex-wrap: wrap;
+    margin: auto;
+    min-width: 100px;
+    max-width: 800px;
+}
 
+/* TURHA ? ? ? ? ? */
+#paa-map {
+    width: 420px;
+    height: 420px;
 
+    position: sticky;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+/* TURHA ? ? ? ? ? */
+#intro-text {
+    text-align: center;
+    position: relative;
+    color: #D0DDD7; /*secondary color #7A8450 */
+}
+
+/* TURHA ? ? ? ? ? */
+.intro-pic {
+    text-align: left;
+    display: block;
+    margin: auto;
+    padding-bottom: 10px;
+    width: 500px;
+    position: relative;
+    left: 0;
+}
+/* "Tietoa meistä" -div */
+#tietoDiv {
+    background: #000000d0;
+    border-radius: 30px;
+    margin: 3% auto auto auto;
+    width: 50%;
+    min-width: 400px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+/* Tekijäprofiilien container. */
+.grid-container {
+    margin: 90px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas:
+        "Tekijät Tekijät Tekijät"
+        "Leo Eetu Aapeli"
+}
+/* Gridin item div. */
+.grid-item {
+    background-color: #000000d0;
+    border-radius: 30px;
+}
+/* Gridin flex-container. */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+/* Gridin flex-item. */
+.flex-item {
+    flex: 1;
+}
+/* Gridin flex-itemin flex-item 1. */
+.flex-item1 {
+    flex: 100%;
+}
+/* Kuvien caption (nimet). */
+figcaption {
+    font-family: "Open sans";
+    color: #4ECCA3;
+    font-weight: bold;
+}
+/* Creditsien div. */
+.credits{
+    background-color: #000000d0;
+    background-size: contain;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px auto;
+    width: 80%;
+    min-width: 200px;
+    max-width: 800px;
+    position: relative;
+}
+/* Creditsien linkit. */
+#links{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* TURHA ? ? ? ?  */
+h3 {
+    text-align: center;
+    color: #4ECCA3;
+    font-family: "Open sans";
+}
+
+/* TURHA ? ? ? ? */
+strong{
+}
