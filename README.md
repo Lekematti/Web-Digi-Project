@@ -1,3 +1,3 @@
 # Web-Digi-Project
-Koulu Projekti
+Koulu Projekti. 
 Projektin nettisivu: https://users.metropolia.fi/~leokos/Web-Digi-Project/
